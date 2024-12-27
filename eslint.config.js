@@ -31,6 +31,7 @@ export default [
       'react/jsx-no-target-blank': 'off',
       'react/prop-types': 'off',
       'no-unused-var' : "off",
+      'react/no-unstable-context-values' : "off",
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },

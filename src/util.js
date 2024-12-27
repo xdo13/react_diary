@@ -58,3 +58,15 @@ export const emotionList = [
         img: getEmotionImgById(5),
     }
 ];
+export const getMonthRangeByDate = (date) => {
+    const beginTimeStamp = new Date(date.getFullYear(), date.getMonth(), 1).getTime();
+    const endTimeStamp = new Date(
+        date.getFullYear(),
+        date.getMonth()+1,
+        0, //다음달의 첫날
+        23, // 0-23시
+        59, // 0-59분
+        59 // 0-59초
+    ).getTime();
+    return { beginTimeStamp, endTimeStamp };
+};

@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 import "./EmotionItem.css";
 
 const EmotionItem = ({ id, img, name, onClick, isSelected }) => {
