@@ -9,7 +9,6 @@ import Viewer from "../component/Viewer";
 const Diary = () => {
     const {id} = useParams();
     const data = useDiary(id);
-    console.log(data);
     const navigate = useNavigate();
 
     const goBack= () => {
@@ -31,8 +30,7 @@ const Diary = () => {
           leftChild={<Button text={"< 뒤로 가기"} onClick={goBack}/>}
           rightChild={<Button text={"수정하기"} onClick={goEdit }/>}
           />
-        <div>{id}번 일기</div>
-        <div>Diary페이지입니다.</div>
+        
         <Viewer content={content} emotionId = {emotionId} />
       </div>
     );
