@@ -6,7 +6,7 @@ import Button from "./Button";
 import EmotionItem from "./EmotionItem";
 
 
-const Editor = ({ initData, onsubmit }) => {
+const Editor = ({ initData, onSubmit }) => {
     const navigate = useNavigate();
 
     const handleOnGoBack = () => {
@@ -38,7 +38,7 @@ const Editor = ({ initData, onsubmit }) => {
         });
     };
     const handleSubmit = () => {
-        onsubmit(state);
+        onSubmit(state);
     };
     const handleChangeEmotion = (emotionId) => {
         setState({
